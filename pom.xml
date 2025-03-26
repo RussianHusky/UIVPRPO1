@@ -14,7 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
          <sonar.organization>russianhusky</sonar.organization>
          <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>RussianHusky_UIVPRPO1</sonar.projectKey>
     </properties>
 
   <dependencyManagement>
