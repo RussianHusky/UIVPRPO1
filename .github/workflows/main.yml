@@ -37,5 +37,5 @@ jobs:
             mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.token=<your personal access token> \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.organization=<your organization key> \
-            -Dsonar.projectKey=<your project key>
+            -Dsonar.organization=<russianhusky> \
+            -Dsonar.projectKey=<org.example:UIVPRPO1>
