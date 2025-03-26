@@ -29,8 +29,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Coverage for Sonar
-        run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Pcoverage
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=RussianHusky_UIVPRPO1
       
