@@ -26,9 +26,11 @@ jobs:
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
-          SONAR_TOKEN: "ebae9c35be512270e4f68474815b226a6510b726"
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Coverage for Sonar
         run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Pcoverage
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       
