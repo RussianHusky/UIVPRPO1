@@ -11,17 +11,13 @@ public class Calculator {
     }
 
 
-    public double calculateCircleArea(double radius) {
-        return 3.14 * radius * radius;
-    }
-
     public int subtract(int a, int b) {
         return a - b;
     }
 
     public int divide(int a, int b) {
         if (b == 0) throw new IllegalArgumentException("Divisor cannot be zero");
-        return a / b; // Уязвимость: деление на ноль!
+        return a / b;
     }
 
     public boolean isPrime(int n) {
