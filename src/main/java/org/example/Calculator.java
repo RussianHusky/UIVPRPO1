@@ -20,6 +20,7 @@ public class Calculator {
     }
 
     public int divide(int a, int b) {
+        if (b == 0) throw new IllegalArgumentException("Divisor cannot be zero");
         return a / b; // Уязвимость: деление на ноль!
     }
 
@@ -37,7 +38,7 @@ public class Calculator {
 
     public boolean isPrime(int n) {
         if (n <= 1) return false;
-        for (int i = 2; i < n; i++) { // Должен быть i <= Math.sqrt(n)
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
             }
